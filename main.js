@@ -62,13 +62,8 @@ for (let i = 0; i < operator.length; i++) {
           else if(this.id == "="){           // calculation formula
                history = getHistory();
                let result = eval(history);
-               if(result.lenght<10){
-                    printOutput(result);
-                    printHistory(history);
-               }else{
-                    alert('This number is out of Capacity of this calculator');
-               }
-               
+               printOutput(result);
+               printHistory(history);
           }
 
           //
